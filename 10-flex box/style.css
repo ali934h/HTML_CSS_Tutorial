@@ -1,0 +1,95 @@
+/* -------------------------------------------------- colors -------------------------------------------------- */
+.color-1 {
+  background-color: #19f61b;
+}
+.color-2 {
+  background-color: #f301cf;
+}
+.color-3 {
+  background-color: #1985ff;
+}
+.color-4 {
+  background-color: #e88407;
+}
+.color-5 {
+  background-color: #8202cc;
+}
+.color-6 {
+  background-color: #ac0800;
+}
+.color-7 {
+  background-color: #d9fd40;
+}
+.color-8 {
+  background-color: #63f9c0;
+}
+.color-9 {
+  background-color: #9762ff;
+}
+/* ---------------------------------------------- end color stye ---------------------------------------------- */
+html{
+  font-size: 62.5%;
+}
+* {
+  font-family: "Patrick Hand", IRANSansWeb;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+}
+legend {
+  text-align: center;
+}
+div.selectItems{
+  display: flex;
+  flex-wrap: wrap;
+  border:1px solid #ccc;
+  background-color: #ede9fe;
+}
+fieldset.sub {
+  width: 8vw;
+  height: 6vw;
+  display: inline-block;
+  text-align: center;
+}
+fieldset.sub * {
+  font-size: 1.7rem;
+}
+fieldset.base * {
+  font-size: 1.5rem;
+}
+
+/* ---------------------------------------------------- row --------------------------------------------------- */
+.container {
+  border: 1px solid #2e2e2e;
+  background-color: #e4e4e7;
+  display: flex;
+}
+.box {
+  border: 1px solid #2e2e2e;
+  cursor: pointer;
+}
+
+
+.radio-pack{
+
+  font-size: 1.5rem;
+}
+
+.radio-pack table, .radio-pack td{
+  border: 2px solid #363636;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+.radio-pack td{
+  margin: 0;
+  padding: 3px 0;
+}
+.radio-pack label{
+  margin: 0;
+
+}
+.radio-pack table{
+  padding: 0;
+}
