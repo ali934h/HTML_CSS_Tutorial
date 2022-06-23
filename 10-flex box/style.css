@@ -1,4 +1,3 @@
-/* -------------------------------------------------- colors -------------------------------------------------- */
 .color-1 {
   background-color: #19f61b;
 }
@@ -26,8 +25,13 @@
 .color-9 {
   background-color: #9762ff;
 }
+
+@font-face {
+  font-family: "Patrick";
+  src: url(PatrickHand-Regular.ttf);
+}
 * {
-  font-family: "Patrick Hand", IRANSansWeb;
+  font-family: "Patrick", IRANSansWeb;
   box-sizing: border-box;
   border-radius: 0.2rem;
   margin: 0.2rem;
