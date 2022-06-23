@@ -8,79 +8,81 @@
   </head>
   <body>
     <div class="selectItems">
-      <fieldset class="sub">
-        <legend>flex-direction:</legend>
-        <select name="flexDirection" id="flexDirection">
-          <option value="row">row</option>
-          <option value="column">column</option>
-        </select>
-      </fieldset>
-      <fieldset class="sub">
-        <legend>flex-wrap:</legend>
-        <select name="flexWrap" id="flexWrap">
-          <option value="nowrap">nowrap</option>
-          <option value="wrap">wrap</option>
-        </select>
-      </fieldset>
-      <fieldset class="sub">
-        <legend>justify-content:</legend>
-        <select name="justifyContent" id="justifyContent">
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="space-between">space-between</option>
-          <option value="space-around">space-around</option>
-          <option value="space-evenly">space-evenly</option>
-        </select>
-      </fieldset>
-      <fieldset class="sub">
-        <legend>align-content:</legend>
-        <select name="alignContent" id="alignContent">
-          <option value="stretch">stretch</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="space-between">space-between</option>
-          <option value="space-around">space-around</option>
-        </select>
-      </fieldset>
-      <fieldset class="sub">
-        <legend>align-items:</legend>
-        <select name="alignItems" id="alignItems">
-          <option value="stretch">stretch</option>
-          <option value="flex-start">flex-start</option>
-          <option value="flex-end">flex-end</option>
-          <option value="center">center</option>
-          <option value="baseline">baseline</option>
-        </select>
-      </fieldset>
-      <fieldset class="sub size-container">
-        <legend>width of container:</legend>
-        <span id="width-Value">UnSet</span>
-        <input type="range" name="width" min="100" max="1400" step="50" />
-      </fieldset>
-      <fieldset class="sub size-container">
-        <legend>height of container:</legend>
-        <span id="height-Value">UnSet</span>
-        <input type="range" name="height" min="100" max="900" step="50" />
-      </fieldset>
+      <div class="container-property">
+        <fieldset class="sub">
+          <legend>flex-direction:</legend>
+          <select name="flexDirection" id="flexDirection">
+            <option value="row">row</option>
+            <option value="column">column</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub">
+          <legend>flex-wrap:</legend>
+          <select name="flexWrap" id="flexWrap">
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub">
+          <legend>justify-content:</legend>
+          <select name="justifyContent" id="justifyContent">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub">
+          <legend>align-content:</legend>
+          <select name="alignContent" id="alignContent">
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub">
+          <legend>align-items:</legend>
+          <select name="alignItems" id="alignItems">
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub size-container">
+          <legend>width of container:</legend>
+          <span id="width-Value">UnSet</span>
+          <input type="range" name="width" min="100" max="1400" step="50" />
+        </fieldset>
+        <fieldset class="sub size-container">
+          <legend>height of container:</legend>
+          <span id="height-Value">UnSet</span>
+          <input type="range" name="height" min="100" max="900" step="50" />
+        </fieldset>
+      </div>
 
-      <div class="radio-pack">
+      <div class="box-property">
         <table>
           <tr>
-            <td><label class="color-1" for="radio-1">box1</label></td>
-            <td><label class="color-2" for="radio-2">box2</label></td>
-            <td><label class="color-3" for="radio-3">box3</label></td>
-            <td><label class="color-4" for="radio-4">box4</label></td>
-            <td><label class="color-5" for="radio-5">box5</label></td>
-            <td><label class="color-6" for="radio-6">box6</label></td>
-            <td><label class="color-7" for="radio-7">box7</label></td>
-            <td><label class="color-8" for="radio-8">box8</label></td>
-            <td><label class="color-9" for="radio-9">box9</label></td>
+            <td class="color-1"><label for="radio-1">box1</label></td>
+            <td class="color-2"><label for="radio-2">box2</label></td>
+            <td class="color-3"><label for="radio-3">box3</label></td>
+            <td class="color-4"><label for="radio-4">box4</label></td>
+            <td class="color-5"><label for="radio-5">box5</label></td>
+            <td class="color-6"><label for="radio-6">box6</label></td>
+            <td class="color-7"><label for="radio-7">box7</label></td>
+            <td class="color-8"><label for="radio-8">box8</label></td>
+            <td class="color-9"><label for="radio-9">box9</label></td>
             <td><label for="radio-All">All Boxes</label></td>
           </tr>
           <tr>
-            <td><input type="radio" name="radio-size" id="radio-1" value="box1" checked/></td>
+            <td><input type="radio" name="radio-size" id="radio-1" value="box1" checked /></td>
             <td><input type="radio" name="radio-size" id="radio-2" value="box2" /></td>
             <td><input type="radio" name="radio-size" id="radio-3" value="box3" /></td>
             <td><input type="radio" name="radio-size" id="radio-4" value="box4" /></td>
@@ -92,17 +94,17 @@
             <td><input type="radio" name="radio-size" id="radio-All" value="boxAll" /></td>
           </tr>
         </table>
+        <fieldset class="sub size-box">
+          <legend>width of box:</legend>
+          <span id="width-box-Value">UnSet</span>
+          <input type="range" name="width" min="10" max="400" step="10" />
+        </fieldset>
+        <fieldset class="sub size-box">
+          <legend>height of box:</legend>
+          <span id="height-box-Value">UnSet</span>
+          <input type="range" name="height" min="10" max="400" step="10" />
+        </fieldset>
       </div>
-      <fieldset class="sub size-box">
-        <legend>width of box:</legend>
-        <span id="width-box-Value">UnSet</span>
-        <input type="range" name="width" min="10" max="400" step="10" />
-      </fieldset>
-      <fieldset class="sub size-box">
-        <legend>height of box:</legend>
-        <span id="height-box-Value">UnSet</span>
-        <input type="range" name="height" min="10" max="400" step="10" />
-      </fieldset>
     </div>
 
     <fieldset class="base">

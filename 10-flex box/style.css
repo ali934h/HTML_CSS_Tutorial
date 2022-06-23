@@ -26,40 +26,57 @@
 .color-9 {
   background-color: #9762ff;
 }
-/* ---------------------------------------------- end color stye ---------------------------------------------- */
-html{
-  font-size: 62.5%;
-}
 * {
   font-family: "Patrick Hand", IRANSansWeb;
-  margin: 0.3rem;
-  padding: 0.3rem;
   box-sizing: border-box;
   border-radius: 0.2rem;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+html {
+  font-size: 70%;
+}
+body {
+  background: #e5e7eb;
 }
 legend {
   text-align: center;
+  border-radius: 0.2rem;
 }
-div.selectItems{
-  display: flex;
-  flex-wrap: wrap;
-  border:1px solid #ccc;
-  background-color: #ede9fe;
+fieldset * {
+  font-size: 1.6rem;
+}
+fieldset,
+div {
+  border-radius: 0.5rem;
 }
 fieldset.sub {
-  width: 8vw;
-  height: 6vw;
+  width: 12rem;
+  height: 8rem;
   display: inline-block;
   text-align: center;
 }
-fieldset.sub * {
-  font-size: 1.7rem;
+fieldset.base {
+  background-color: #9ca3af;
+  margin-top: 2rem;
 }
-fieldset.base * {
-  font-size: 1.5rem;
+fieldset.base legend {
+  background-color: #bef264;
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  border: 0.2rem solid #3730a3;
 }
 
-/* ---------------------------------------------------- row --------------------------------------------------- */
+.selectItems {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  background-color: #a78bfa;
+}
+.selectItems > * {
+  margin: 0.5rem;
+}
 .container {
   border: 1px solid #2e2e2e;
   background-color: #e4e4e7;
@@ -70,26 +87,27 @@ fieldset.base * {
   cursor: pointer;
 }
 
-
-.radio-pack{
-
+.box-property {
+  display: inline-flex;
   font-size: 1.5rem;
+  align-items: flex-start;
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+}
+.container-property {
+  border: 1px solid #d1d5db;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  display: inline-flex;
 }
 
-.radio-pack table, .radio-pack td{
-  border: 2px solid #363636;
+.box-property table {
+  margin-top: 1.4rem;
+}
+.box-property table,
+.box-property td {
+  border: 0.1rem solid #4c1d95;
   border-collapse: collapse;
   text-align: center;
-  
-}
-.radio-pack td{
-  margin: 0;
-  padding: 3px 0;
-}
-.radio-pack label{
-  margin: 0;
-
-}
-.radio-pack table{
-  padding: 0;
 }
