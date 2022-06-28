@@ -76,7 +76,7 @@ fieldset.base legend {
   display: inline-flex;
   flex-wrap: wrap;
   border: 1px solid #ccc;
-  background-color: #a78bfa;
+  background-color: #e0e7ff;
 }
 .selectItems > * {
   margin: 0.5rem;
@@ -115,3 +115,8 @@ fieldset.base legend {
   border-collapse: collapse;
   text-align: center;
 }
+#span-guide{
+  width: 20rem !important;
+}
+
+

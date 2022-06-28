@@ -35,6 +35,16 @@
           </select>
         </fieldset>
         <fieldset class="sub">
+          <legend>align-items:</legend>
+          <select name="alignItems" id="alignItems">
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+          </select>
+        </fieldset>
+        <fieldset class="sub">
           <legend>align-content:</legend>
           <select name="alignContent" id="alignContent">
             <option value="stretch">stretch</option>
@@ -45,52 +55,43 @@
             <option value="space-around">space-around</option>
           </select>
         </fieldset>
-        <fieldset class="sub">
-          <legend>align-items:</legend>
-          <select name="alignItems" id="alignItems">
-            <option value="stretch">stretch</option>
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">center</option>
-            <option value="baseline">baseline</option>
-          </select>
-        </fieldset>
         <fieldset class="sub size-container">
           <legend>width of container:</legend>
-          <span id="width-Value">UnSet</span>
+          <span id="width-container-Value">UnSet</span>
           <input type="range" name="width" min="100" max="1400" step="50" />
         </fieldset>
         <fieldset class="sub size-container">
           <legend>height of container:</legend>
-          <span id="height-Value">UnSet</span>
+          <span id="height-container-Value">UnSet</span>
           <input type="range" name="height" min="100" max="900" step="50" />
         </fieldset>
+
       </div>
 
       <div class="box-property">
         <table>
           <tr>
-            <td class="color-1"><label for="radio-1">box1</label></td>
-            <td class="color-2"><label for="radio-2">box2</label></td>
-            <td class="color-3"><label for="radio-3">box3</label></td>
-            <td class="color-4"><label for="radio-4">box4</label></td>
-            <td class="color-5"><label for="radio-5">box5</label></td>
-            <td class="color-6"><label for="radio-6">box6</label></td>
-            <td class="color-7"><label for="radio-7">box7</label></td>
-            <td class="color-8"><label for="radio-8">box8</label></td>
-            <td class="color-9"><label for="radio-9">box9</label></td>
+            <td class="color-1 box1"><label for="radio-1">box1</label></td>
+            <td class="color-2 box2"><label for="radio-2">box2</label></td>
+            <td class="color-3 box3"><label for="radio-3">box3</label></td>
+            <td class="color-4 box4"><label for="radio-4">box4</label></td>
+            <td class="color-5 box5"><label for="radio-5">box5</label></td>
+            <td class="color-6 box6"><label for="radio-6">box6</label></td>
+            <td class="color-7 box7"><label for="radio-7">box7</label></td>
+            <td class="color-8 box8"><label for="radio-8">box8</label></td>
+            <td class="color-9 box9"><label for="radio-9">box9</label></td>
             <td><label for="radio-All">All Boxes</label></td>
           </tr>
           <tr>
-            <td><input type="radio" name="radio-size" id="radio-1" value="box1" checked /></td>
-            <td><input type="radio" name="radio-size" id="radio-2" value="box2" /></td>
-            <td><input type="radio" name="radio-size" id="radio-3" value="box3" /></td>
-            <td><input type="radio" name="radio-size" id="radio-4" value="box4" /></td>
-            <td><input type="radio" name="radio-size" id="radio-5" value="box5" /></td>
-            <td><input type="radio" name="radio-size" id="radio-6" value="box6" /></td>
-            <td><input type="radio" name="radio-size" id="radio-7" value="box7" /></td>
-            <td><input type="radio" name="radio-size" id="radio-8" value="box8" /></td>
-            <td><input type="radio" name="radio-size" id="radio-9" value="box9" /></td>
+            <td class="box1"><input type="radio" name="radio-size" id="radio-1" value="box1" checked /></td>
+            <td class="box2"><input type="radio" name="radio-size" id="radio-2" value="box2" /></td>
+            <td class="box3"><input type="radio" name="radio-size" id="radio-3" value="box3" /></td>
+            <td class="box4"><input type="radio" name="radio-size" id="radio-4" value="box4" /></td>
+            <td class="box5"><input type="radio" name="radio-size" id="radio-5" value="box5" /></td>
+            <td class="box6"><input type="radio" name="radio-size" id="radio-6" value="box6" /></td>
+            <td class="box7"><input type="radio" name="radio-size" id="radio-7" value="box7" /></td>
+            <td class="box8"><input type="radio" name="radio-size" id="radio-8" value="box8" /></td>
+            <td class="box9"><input type="radio" name="radio-size" id="radio-9" value="box9" /></td>
             <td><input type="radio" name="radio-size" id="radio-All" value="boxAll" /></td>
           </tr>
         </table>
@@ -103,6 +104,20 @@
           <legend>height of box:</legend>
           <span id="height-box-Value">UnSet</span>
           <input type="range" name="height" min="10" max="400" step="10" />
+        </fieldset>
+        <fieldset class="sub size-box">
+          <legend>shrink of box:</legend>
+          <span id="flexShrink-box-Value">UnSet</span>
+          <input type="range" name="flexShrink" min="0" max="10" step="0.1" value="1"/>
+        </fieldset>
+        <fieldset class="sub size-box">
+          <legend>grow of box:</legend>
+          <span id="flexGrow-box-Value">UnSet</span>
+          <input type="range" name="flexGrow" min="0" max="10" step="0.1"  value="1"/>
+        </fieldset>
+        <fieldset class="sub" id="span-guide">
+          <legend>Guide:</legend>
+          <span >double click on an unSelected Box to remove it</span>
         </fieldset>
       </div>
     </div>
@@ -120,7 +135,6 @@
         <div class="box box7 color-7" id="box7">box 7</div>
         <div class="box box8 color-8" id="box8">box 8</div>
         <div class="box box9 color-9" id="box9">box 9</div>
-        ali hosseini
       </div>
     </fieldset>
 
